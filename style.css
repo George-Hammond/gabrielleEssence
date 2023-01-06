@@ -14,6 +14,7 @@ body{
     height: 500px;
     display: flex;
     border-radius: 10px;
+    
 }
 
 .image-container > img{
@@ -29,4 +30,155 @@ body{
     width: 350px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+
+span{
+    text-transform: uppercase;
+}
+
+.information-container p{
+    margin-left: 40px;
+    margin-right: 25px ;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    
+}
+
+#perfume{
+    margin-top: 27px;
+    margin-bottom: 20px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.information-container h1{
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
+    margin: 0px 25px 20px 40px;
+    width: 202px;
+    line-height: 31px;
+}
+
+.description{
+    margin-bottom: 47px;
+    line-height: 25px;
+}
+
+.price-container{
+    display: flex;
+    margin-left: 40px;
+    margin-bottom: 35px;
+    align-items: center;
+}
+
+.price-container h2{
+    font-size: 40px;
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%)
+}
+
+#strikethrough{
+    height: 15px;
+    margin-left: 25px;
+    text-decoration: line-through;
+}
+
+button{
+    background-color: hsl(158, 36%, 37%);
+    display: flex;
+    margin-left: 40px;
+    height: 55px;
+    width: 255px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+}
+
+button:hover{
+    background-color: hsla(158, 96%, 10%, 0.889);
+}
+
+#add-to-cart{
+    color: white;
+    margin: 0px 0px 0px 10px;
+}
+
+@media only screen and (max-width: 480px) {
+    .main-container{
+        height: 700px;
+        width: 375px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        margin: 100px auto 20px auto;
+        position: relative;
+    }
+
+    .image-container > img{
+    height: 250px;
+    width: 375px;
+    object-fit:cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    }
+    .information-container{
+        background-color: hsl(0, 0%, 100%);
+        height: 450px;
+        width: 375px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 10px;
+        position: relative;
+        top: -5px;
+    }
+    .information-container h1{
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
+    margin: 0px 25px 20px 20px;
+    width: 284px;
+    line-height: 31px;
+    }
+
+    .information-container p{
+        margin-left: 20px;
+        margin-right: 25px ;
+        font-family: 'Montserrat', sans-serif;
+        color: hsl(228, 12%, 48%);
+        
+    }
+
+    .description{
+        margin-bottom: 27px;
+        line-height: 25px;
+        width: 333px;
+        
+    }
+
+    .price-container{
+        display: flex;
+        margin-left: 20px;
+        margin-bottom: 35px;
+        align-items: center;
+    }
+
+    button{
+    background-color: hsl(158, 36%, 37%);
+    display: flex;
+    margin-left: 20px;
+    height: 55px;
+    width: 340px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    }
+
+    #strikethrough{
+        height: 15px;
+        margin-left: 15px;
+        text-decoration: line-through;
+    }
 }
